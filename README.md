@@ -33,4 +33,7 @@ explain_result.pretty_print()
 #   Index Cond: (id = 1)
 # Planning time: 1.203 ms
 # Execution time: 0.106 ms
+
+result.get_depesz_url()
+# https://explain.depesz.com/s/Tym
 ```

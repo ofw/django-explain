@@ -24,12 +24,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-explain',
-    version='1.0',
+    version='1.1',
     py_modules=[
         'django_explain',
     ],
     include_package_data=True,
-    install_requires=['Django>=1.7', 'sqlparse'],
+    install_requires=['Django>=1.7', 'requests', 'sqlparse'],
     license='MIT License',
     description='A helper to get EXPLAIN and EXPLAIN ANALYZE OUTPUT for django queryset.',
     author='Egor Orlov',

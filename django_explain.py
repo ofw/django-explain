@@ -1,6 +1,7 @@
 # coding: utf-8
 
 from django.db import connections
+import requests
 import sqlparse
 
 
@@ -14,6 +15,13 @@ class ExplainResult(object):
         sql = sqlparse.format(self.sql, reindent=True, keyword_case='upper')
         print(sql)
         print(self.explain)
+
+    def get_depesz_url(self):
+        payload = {"title": "default", "plan": self.explain}
+        url = "https://explain.depesz.com"
+        response = requests.post(url=url, data=payload)
+        response.raise_for_status()
+        return url + response.headers.get("Location")
 
 
 def explain(query, analyze=True):
