@@ -29,7 +29,7 @@ setup(
         'django_explain',
     ],
     include_package_data=True,
-    install_requires=['Django>=1.7', 'termcolor'],
+    install_requires=['Django>=1.7', 'sqlparse'],
     license='MIT License',
     description='A helper to get EXPLAIN and EXPLAIN ANALYZE OUTPUT for django queryset.',
     author='Egor Orlov',
