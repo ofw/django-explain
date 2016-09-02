@@ -24,7 +24,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-explain',
-    version='1.1',
+    version='1.1.1',
     py_modules=[
         'django_explain',
     ],
@@ -35,6 +35,7 @@ setup(
     author='Egor Orlov',
     author_email='oeegor@gmail.com',
     platforms='any',
+    url='https://github.com/oeegor/django-explain',
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
